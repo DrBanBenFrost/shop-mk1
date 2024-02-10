@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Фигурки персонажей mortal kombat</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+		<div class="col-md-3 mb-2 mb-md-0">
+		  <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+			<svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+		  </a>
+		</div>
+  
+		<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+		  <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+		  <li><a href="#" class="nav-link px-2">Features</a></li>
+		  <li><a href="#" class="nav-link px-2">Pricing</a></li>
+		  <li><a href="#" class="nav-link px-2">FAQs</a></li>
+		  <li><a href="#" class="nav-link px-2">About</a></li>
+		</ul>
+  
+		<div class="col-md-3 text-end">
+		  <button type="button" class="btn btn-outline-primary me-2">Login</button>
+		  <button type="button" class="btn btn-primary">Sign-up</button>
+		</div>
+	  </header>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<h4 class="logo">Магазин игрушек</h4>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Главная</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Фигурки</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Плюшевые игрушки</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Видиоигры</a>
+					</li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line burger__line_1"></div>
+					<div class="burger__line burger__line_2"></div>
+					<div class="burger__line burger__line_3"></div>
+				</div>
+			</nav>
+			<button id="btn-menu" class="btn-menu">меню</button>
+			<div id="menu" class="header_menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#">вход</a></li>
+					<li class="menu__item"><a href="#">корзина</a></li>
+					<li class="menu__item"><a href="#">акции</a></li>
+					<li class="menu__item"><a href="#">реклама</a></li>
+					<li class="menu__item">
+						<div class="theme">
+							<h4 class="theme__title">тема</h4>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__light" onclick="choiceLight()"></div>
+								</li>
+								<li class="theme__item">
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="clock">
+			<div class="container container_clock">
+				<div id="time"></div>
+			</div>
+		</section>
+		<section class="shop">
+			<div class="container">
+				<h1 class="shop_title">Фигурки персонажей mortal kombat</h1>
+				<img class="shop_img" src="img/MK.jpg">
+				<h2 class="shop_title">О товаре</h2>
+				<p class="shop_tex">Коллекционная подвижная фигурка персонажа игры "Мортал Комбат" (McFarlane Toys
+					Mortal
+					Kombat Noob Saibot Action Figure).
+					В комплекте есть подставка и оружие. </p>
+				<h2 class="shop_title">Цена</h2>
+				<p class="shop_price">3714₽</p>
+				<button type="button" class="shop_but" id="but" onclick="buy()">Купить</button>
+			</div>
+		</section>
+		<section class="cards">
+			<div class="container">
+				<div class="cards__container">
+					<ul class="cards__list">
+						<li class="cards__item">
+							<div class="card" style="width: 18rem;">
+								<img src="img/sdfghj.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								  <h5 class="card-title">Скорпион</h5>
+								  <p class="card-text">Облики</p>
+								</div>
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">Классический</li>
+								  <li class="list-group-item">Injustice</li>
+								  <li class="list-group-item">MK1</li>
+								</ul>
+								<div class="card-body">
+								  <a href="#" class="card-link">Ссылка карточки</a>
+								  <a href="#" class="card-link">Другая ссылка</a>
+								</div>
+							  </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="maps">
+			<div class="continer">
+				<h1 class="maps__title"> Точка самовывоза</h1>
+				<div class="google">
+					<h3 class="google__map"> Google карта</h3>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17486.420839662413!2d105.74941711279625!3d56.78069370437179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cf85a7e1135a6c9%3A0xbf8a0c981eb5bb92!2z0JPQvtGB0YLQuNC90LjRhtCwICLQn9C10LrQuNC9Ig!5e0!3m2!1sru!2sru!4v1701512334522!5m2!1sru!2sru"
+						width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="Yandex">
+					<h3 class="Yandex__map"> Яндекс карта</h3>
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac3ffe10a332d181c691e538bfa336de2c9fa05199eed04b48537d05452ae8159&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container container_footer">
+			<p class="footer__text">&copy; get over here</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
+	<script type="text/javascript" src="js/burger.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

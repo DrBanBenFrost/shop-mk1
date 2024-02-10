@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	background: rgba(4, 135, 222, 0.477);
+
+}
+.nav{
+	display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+}
+.nav__list{
+	list-style: none;
+	justify-content: space-between;
+	display: flex;
+	width: 50%;
+}
+.logo{
+	font-size: 50px;
+	color: rgb(255, 153, 0);
+}
+.nav__link{
+	text-decoration: none;
+	font-size: 25px;
+	color: rgb(255, 0, 0); 
+	transition: 0.5s;
+}
+.nav__link:hover{
+	color: aliceblue;
+	font-size: 30px;
+} 
+.header_menu{
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(56, 73, 194, 0.5);
+	width: 300px;
+	height: 100px;
+	padding: 40px;
+	display: none;
+}
+.is-active{
+	display: block;
+}
+.shop_title{
+	text-align: center;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1100px;
+	
+}
+.shop_img {
+	width: 100%;
+}
+.shop{
+	background-color: rgb(rgb(62, 3, 3))
+}
+.cards__item{
+	list-style: none;
+}
+.footer{
+	border-top: 3px rgb(255, 117, 18) ;
+}
+.container_footer{
+	padding: 30px 0;
+
+}
+.theme__light{
+	width: 20px;
+	height: 20px;
+	background: skyblue;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.theme__dark{
+	width: 20px;
+	height: 20px;
+	background: rgb(0, 40, 55);
+	border-radius: 100%;
+	cursor: pointer;
+}
+.burger{
+	display: none;
+}
+.burger__line{
+	width: 50px;
+	height: 6px;
+	background: rebeccapurple;
+	margin: 10px;
+	transition: all .9s ease;
+}
+.burger__line:hover{
+	color: aliceblue;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	body{
+		overflow-x: hidden;
+	}
+	.nav__list {
+		display: none;
+	}
+	.container{
+		max-width: 600px;
+		
+	}
+	.burger{
+		display: block;
+		cursor: pointer;
+	}
+
+	.active .burger__line_1{
+		transform: rotate(-45deg) translate(-10px, 12px);
+	}
+	.active .burger__line_2{
+		opacity: 0;
+	}
+	.active .burger__line_3{
+		transform: rotate(45deg) translate(-10px, -12px);
+	}
+	.nav__list{
+		display: flex;
+		flex-direction: column;
+		background-color: yellowgreen;
+		position: absolute;
+		right: 0px;
+		height: 40vh;
+		top: 220px;
+		z-index: 2;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform .5s ease-in;
+	}
+	.nav__list_active{
+		transform:translateX(0%) ;
+	}
+}
